@@ -84,12 +84,17 @@
 #     return mini
 
 # - створити функцію яка повертає найбільше число з ліста
+def max_of_list(lst):
+    return max(lst)
 
 # - створити функцію яка повертає найменьше число з ліста
+def min_of_list(number):
+    miin = min(number)
+    return miin
 
 # - створити функцію яка приймає ліст чисел та складає значення елементів ліста та повертає його.
-
-# - створити функцію яка приймає ліст чисел та повертає середнє арифметичне його значень.
+def summ(numbers):
+    return sum(numbers)
 
 # Табличка множення
 # def multi():
@@ -119,7 +124,8 @@ def menu():
         print('1. Знайти мін число')
         print('2. Видалити усі дублікати')
         print('3. Замінити кожне 4-те значення на `X`')
-        print('4. EXIT')
+        print('4. ')
+        print('5. EXIT')
         choose = input('Choose one item: ')
         if choose == '1':
             def min_num():
@@ -143,4 +149,13 @@ def menu():
                 print(['X' if not (i + 1) % 4 else item for i, item in enumerate(arrrr)])
 
         elif choose == '4':
+            sq(10)
+            def sq(size):
+                for item in range(size):
+                    if item == 0 or item == size - 1:
+                        print('*' * size)
+                    else:
+                        print('*' + ' ' * (size - 2) + '*')
+
+        elif choose == '5':
             break
